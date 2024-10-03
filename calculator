@@ -1,0 +1,50 @@
+#include<iostream>
+using namespace std;
+int main (){
+    int p, q, sum, diff, pro, divi;
+    char op;
+    cout<<"Enter numbers"<<endl;
+    cin>>p>>q;
+    cout<<"Select operation \n a) Addition\n b) Subtraction\n c) Multiplication\n d) Division\n e) Exit\n";
+    cin>>op;
+    switch (op){
+        case 'a':
+        {
+        sum = p+q;
+        cout<< sum;
+        break;}
+        
+        case 'b':
+        {
+            diff = p-q;
+            cout<<diff;
+            break;
+        }
+        case 'c':
+        {
+            pro= p*q;
+            cout<<pro;
+            break;
+        }
+        case 'd':
+        {
+            divi= p/q;
+            cout<< divi;
+            break;
+        }
+        case 'e':
+        {
+            printf("thank you");
+            break;
+        }
+        default:
+        {
+            printf("please select a valid operation");
+        }
+    }
+  
+    
+}
+
+
+
